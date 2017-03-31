@@ -1,5 +1,7 @@
 # PinyinChineseMatcher
 
+根据给出的拼音，处理中文字符串，返回匹配到的汉字的位置
+
 [![CI Status](http://img.shields.io/travis/wrlqwe/PinyinChineseMatcher.svg?style=flat)](https://travis-ci.org/wrlqwe/PinyinChineseMatcher)
 [![Version](https://img.shields.io/cocoapods/v/PinyinChineseMatcher.svg?style=flat)](http://cocoapods.org/pods/PinyinChineseMatcher)
 [![License](https://img.shields.io/cocoapods/l/PinyinChineseMatcher.svg?style=flat)](http://cocoapods.org/pods/PinyinChineseMatcher)

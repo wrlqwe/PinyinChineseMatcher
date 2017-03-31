@@ -1,0 +1,6 @@
+framework module PinyinChineseMatcher {
+  umbrella header "PinyinChineseMatcher-umbrella.h"
+
+  export *
+  module * { export * }
+}

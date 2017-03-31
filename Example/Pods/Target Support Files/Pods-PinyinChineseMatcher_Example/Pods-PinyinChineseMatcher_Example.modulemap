@@ -1,0 +1,6 @@
+framework module Pods_PinyinChineseMatcher_Example {
+  umbrella header "Pods-PinyinChineseMatcher_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
