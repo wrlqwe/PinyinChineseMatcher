@@ -121,35 +121,6 @@ public class PinyinChineseMatcher {
             }
             currentIndex = currentIndex + 1
         }
-//        chinesePinyins.enumerated().forEach { index, pinyins in
-//            print("matching index: \(index), pinyins: \(pinyins)")
-//            for pinyin in pinyins {
-//                let checkResult = matchType.check(pinyinToCheck: matchRemains, pinyin: pinyin)
-//                if checkResult.passed && !searchStarted {
-//                    matchRemains = checkResult.remains
-//                    if matchRemains.isEmpty {
-//                        searchStarted = false
-//                        rangesSearched.append(NSRange(location: index, length: 1))
-//                        matchRemains = pinyinToMatch
-//                    } else {
-//                        searchStarted = true
-//                        startIndex = index
-//                    }
-//                    return
-//                } else if checkResult.passed {
-//                    matchRemains = checkResult.remains
-//                    if matchRemains.isEmpty {
-//                        searchStarted = false
-//                        rangesSearched.append(NSRange(location: startIndex, length: index - startIndex + 1))
-//                        matchRemains = pinyinToMatch
-//                    }
-//                    return
-//                } else if searchStarted {
-//                    searchStarted = false
-//                    matchRemains = pinyinToMatch
-//                }
-//            }
-//        }
 
         return rangesSearched
     }
