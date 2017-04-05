@@ -32,7 +32,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'PinyinChineseMatcher/Classes/**/*'
-  
+
+  s.default_subspec = 'Pinyin4Objc'
   # s.resource_bundles = {
   #   'PinyinChineseMatcher' => ['PinyinChineseMatcher/Assets/*.png']
   # }
@@ -40,5 +41,9 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-    s.dependency 'PinYin4Objc_FrameworksSupport', '~> 1.1.2'
+
+  s.subspec 'Pinyin4Objc' do |sp|
+    sp.source_files = 'PinyinChineseMatcher/Pinyin4Objc/**/*'
+    sp.dependency 'PinYin4Objc_FrameworksSupport', '~> 1.1.2'
+  end
 end
