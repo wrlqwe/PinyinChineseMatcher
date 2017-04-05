@@ -10,7 +10,6 @@ import Foundation
 public enum PinyinChineseMatchType: Int {
     case fullCheck
     case shorthandCheck
-//    case mixedCheck
 
     fileprivate func check(pinyinToCheck: String, pinyin: String, allowBreak: Bool = true) -> (passed: Bool, remains: String) {
         switch self {
@@ -53,11 +52,11 @@ public enum PinyinChineseMatchType: Int {
 
 public class PinyinChineseMatcher {
     public class func match(chineseToMatch: String, pinyinToMatch: String) -> [NSRange] {
-        var matches = match(chineseToMatch: chineseToMatch, pinyinToMatch: pinyinToMatch, matchType: .fullCheck)
+        let fullMatch = match(chineseToMatch: chineseToMatch, pinyinToMatch: pinyinToMatch, matchType: .fullCheck)
         let shorthandMatch = match(chineseToMatch: chineseToMatch, pinyinToMatch: pinyinToMatch, matchType: .shorthandCheck)
-        matches.append(contentsOf: shorthandMatch)
-        return matches
+        return rangeMerging(ranges: fullMatch, otherRanges: shorthandMatch)
     }
+
     public class func match(chineseToMatch: String, pinyinToMatch: String, matchType: PinyinChineseMatchType) -> [NSRange] {
         guard pinyinToMatch.characters.count > 0 else {
             return []
@@ -123,5 +122,11 @@ public class PinyinChineseMatcher {
         }
 
         return rangesSearched
+    }
+
+    private class func rangeMerging(ranges: [NSRange], otherRanges: [NSRange]) -> [NSRange] {
+        var newRange = ranges
+        newRange.append(contentsOf: otherRanges)
+        return newRange
     }
 }
