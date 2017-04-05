@@ -14,10 +14,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var pinyinTextField: UITextField!
     @IBOutlet weak var tipsLabel: UILabel!
 
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         chineseTextView.delegate = self
         pinyinTextField.delegate = self
+        process("")
+        NotificationCenter.default.addObserver(self, selector: #selector(process(_:)), name: NSNotification.Name.UITextFieldTextDidChange, object: nil)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
