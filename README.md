@@ -1,5 +1,8 @@
 # PinyinChineseMatcher
 
+This Library is mean to help highlight Chinese text which match related pinyin
+这个库可以用来实现根据拼音高亮汉字
+
 根据给出的拼音，处理中文字符串，返回匹配到的汉字的位置
 
 [![CI Status](http://img.shields.io/travis/wrlqwe/PinyinChineseMatcher.svg?style=flat)](https://travis-ci.org/wrlqwe/PinyinChineseMatcher)
@@ -8,8 +11,6 @@
 [![Platform](https://img.shields.io/cocoapods/p/PinyinChineseMatcher.svg?style=flat)](http://cocoapods.org/pods/PinyinChineseMatcher)
 
 ## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 
