@@ -53,6 +53,7 @@
 		57F3A903EAA3247E30EE497BFFB4D213 /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FD815D093B235D72A78FCE855C7C0A /* QCKDSL.m */; };
 		599669823A2EED2928C77F301F6B0515 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55C79D0DE39C5419F56B8A3A6FF8FF0 /* BeNil.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		5B50920F205E6C0F79C83532DE0BD617 /* Pods-PinyinChineseMatcher_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6384F73A5E421C54DF85265859A36D2B /* Pods-PinyinChineseMatcher_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E4170C77F4BD804399F2C345233D72C /* PinyinChineseMatcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B138B4E7772C8E5508A61022456D50 /* PinyinChineseMatcher-dummy.m */; };
 		5F1C5CD8F66594B9BA885DEE0DF80000 /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F4E9756D7609F40E4A8BA44826E6FC /* Callsite.swift */; };
 		61431A8AF034870F4188BC0E655FD5D6 /* PinYin4Objc_FrameworksSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7A7F7B8BD161EBDE6C73CAE7758866 /* PinYin4Objc_FrameworksSupport.framework */; };
 		62744EF299751FB49B5FCD81D8C8FFF7 /* SatisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2626E2C0514A47A51CE987D2C1046E75 /* SatisfyAnyOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -65,7 +66,6 @@
 		74FD712F3B503891B6BD9E5CD287E481 /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275E9AED2D723FF3E9B33FC4ADF9E84 /* AssertionDispatcher.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		76036D32625A56D480D84AA46961EF91 /* Nimble-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 807B05C7BF8E61FBBCD7DA19C6669064 /* Nimble-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78F3DE174B4F8D368EF8EEFD7EE62087 /* BeVoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397908D3019EF8549F5F4C02BA983596 /* BeVoid.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		79947A4808C1CC8BDBDE11156440A4AE /* PinyinChineseMatcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B138B4E7772C8E5508A61022456D50 /* PinyinChineseMatcher-dummy.m */; };
 		7D6269A3CFE53C28DAA6B92E8FC017A7 /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648D2AD23F82B32D10451AED0AFE1A30 /* FailureMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		7F6750C7B1847733370B18C4CBFE32DF /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CD7486A018F923609F097AB01FBD53 /* Errors.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8015239010C1D642F14C105F8FF8E035 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2F4894D316C6D1400E02CF4B6E3FB /* Expression.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -103,6 +103,7 @@
 		BF3AF1D2B46E09E2B3DCC824E6C1F5AF /* Equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D774714AE2694901BB71C95D127351 /* Equal.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		BF59602788113CA880D6C3FC03F2F9FC /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D0F4DBEEEF1CA5ACE86B0D6F887E51 /* DSL.swift */; };
 		C03D5B4B1DA26CF994C41EA12C2F5F42 /* PinyinHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C67C084E1B219B24778978637A9F15 /* PinyinHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1242A32A174B84873800D02C7EB2DBC /* PinyinChineseMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA19DF1F6BB21419B8F6CDF672F69A9 /* PinyinChineseMatcher.swift */; };
 		C2F4E57520B2B58B324D3F6CA7C18E69 /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7AE64DD07C8D88390E269E5FF412CE /* ExampleHooks.swift */; };
 		CB7558CCDD935C9E82BBF454022ED1D3 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1FD8F10472A4A26D8190005742F6B1 /* Expectation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		CE3FA6AE0944D4AE737F0E57CFF4A615 /* HaveCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C863D9EC2CAA14B86376ACE95CA5DFC /* HaveCount.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -115,7 +116,7 @@
 		DCB324C90473172ECB030ED29E816A6E /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A617087B472C39ECEA0933FD17B2CCCA /* World+DSL.swift */; };
 		DCEE854E62441E78FED15CC994497F61 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6302812A70C4699740F9FEC4F253340 /* AllPass.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		DDD75875A1F0B94E996852D13F6C7092 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83CC3D1024DF4AE9F73F1111BF04795 /* World.swift */; };
-		E13793F4769369CC0854C80A37D2C42D /* PinyinChineseMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE126DB71936CABB8B3AEFFCC308D3F1 /* PinyinChineseMatcher.swift */; };
+		DE3E7508698DD8F09CA79C859D612801 /* Character+Pinyins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDB3547132EE7D9A720C782708B1DA /* Character+Pinyins.swift */; };
 		E41DF9994ADF380AD22E111CBDD87F63 /* PinyinFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = D8276BA5EDC74A8DC5F97D54AFDC8554 /* PinyinFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5670AAF7E9615B720EC4783F1FDE7F4 /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 97111D71752385BBE495179F9F0AD98C /* ChineseToPinyinResource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E5CCEF0B83F8272D10671C01AAE4FFA0 /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8205EFD8A8B585C9F21A595B2FFAAB2 /* NimbleXCTestHandler.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -134,7 +135,6 @@
 		FAB4ECE0C5039D99BB7173880670871D /* BeLessThanOrEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2BE0A8726A465E6AE38869F4DB9D0 /* BeLessThanOrEqual.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		FCFFEB587281358CFF05A65ED9E94C12 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14ED93A74269F5D88DFDB55D60B7FAC /* Functional.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		FDEA11CC7ACBA1367301170859F8B992 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492D3613D04D6DB42D016DCDD09712BE /* XCTest.framework */; };
-		FE149CC207A8004AC0FCCBD7515436EE /* String+Pinyin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A560F46C2528952ADAE2C595105FAC9 /* String+Pinyin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,7 +225,7 @@
 		54FD815D093B235D72A78FCE855C7C0A /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Sources/QuickObjectiveC/DSL/QCKDSL.m; sourceTree = "<group>"; };
 		58203096E552FC4C205A24D8D3C54E58 /* PinyinHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PinyinHelper.m; path = PinYin4Objc/Classes/PinyinHelper.m; sourceTree = "<group>"; };
 		5969251119791A05057CAE9D6525F892 /* Pods-PinyinChineseMatcher_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PinyinChineseMatcher_Example.modulemap"; sourceTree = "<group>"; };
-		5A560F46C2528952ADAE2C595105FAC9 /* String+Pinyin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Pinyin.swift"; sourceTree = "<group>"; };
+		5AA19DF1F6BB21419B8F6CDF672F69A9 /* PinyinChineseMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PinyinChineseMatcher.swift; sourceTree = "<group>"; };
 		5B6335332599813AE0B7BE36F895B3FA /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HanyuPinyinOutputFormat.m; path = PinYin4Objc/Classes/HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
 		5CC11033D4F4FC6D9B16A805A1727FAB /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Sources/Nimble/DSL.swift; sourceTree = "<group>"; };
 		5D53684FABA17BCA67676EE1C995F91C /* Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Nimble.modulemap; sourceTree = "<group>"; };
@@ -263,6 +263,7 @@
 		907D3169CD6F023571D871C8C2BE3842 /* PinYin4Objc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PinYin4Objc.h; path = PinYin4Objc/Classes/PinYin4Objc.h; sourceTree = "<group>"; };
 		911EE29F4E41A5488214EE37535FAAD3 /* PinYin4Objc_FrameworksSupport-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PinYin4Objc_FrameworksSupport-dummy.m"; sourceTree = "<group>"; };
 		921091E22807E33D9D87B58DE71913DA /* MatchError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchError.swift; path = Sources/Nimble/Matchers/MatchError.swift; sourceTree = "<group>"; };
+		92FDB3547132EE7D9A720C782708B1DA /* Character+Pinyins.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Character+Pinyins.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9505A63B666294FA902BDEC27BF78CE9 /* DSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSL.h; path = Sources/NimbleObjectiveC/DSL.h; sourceTree = "<group>"; };
 		95D942A2569C0189C107ECF0A13FAB76 /* CwlCatchBadInstruction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CwlCatchBadInstruction.m; path = Sources/Lib/CwlPreconditionTesting/CwlPreconditionTesting/CwlCatchBadInstruction.m; sourceTree = "<group>"; };
@@ -337,7 +338,6 @@
 		FB3362C5BBFA0DC69E91BB22E7AE5249 /* BeIdenticalTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeIdenticalTo.swift; path = Sources/Nimble/Matchers/BeIdenticalTo.swift; sourceTree = "<group>"; };
 		FCD28AB8497288F986D753388AA4E2B4 /* PostNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PostNotification.swift; path = Sources/Nimble/Matchers/PostNotification.swift; sourceTree = "<group>"; };
 		FD970E0F1C012781974827726E5E610E /* PinyinFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PinyinFormatter.m; path = PinYin4Objc/Classes/PinyinFormatter.m; sourceTree = "<group>"; };
-		FE126DB71936CABB8B3AEFFCC308D3F1 /* PinyinChineseMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PinyinChineseMatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -530,6 +530,16 @@
 			path = Quick;
 			sourceTree = "<group>";
 		};
+		628F2C3CE616107F2FC9F150ED057BE0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				92FDB3547132EE7D9A720C782708B1DA /* Character+Pinyins.swift */,
+				5AA19DF1F6BB21419B8F6CDF672F69A9 /* PinyinChineseMatcher.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		641537D17BC19DC4F96891BEDAC0C6D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,7 +678,7 @@
 		BB2D011B52ED0920313628330BEB123C /* PinyinChineseMatcher */ = {
 			isa = PBXGroup;
 			children = (
-				EB69CB29F8C31B5C8CCEEF026F6E716B /* Classes */,
+				628F2C3CE616107F2FC9F150ED057BE0 /* Classes */,
 			);
 			name = PinyinChineseMatcher;
 			path = PinyinChineseMatcher;
@@ -714,16 +724,6 @@
 				4BF2A7D5E644696B46A9FC849BC3FCF9 /* Quick */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		EB69CB29F8C31B5C8CCEEF026F6E716B /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				FE126DB71936CABB8B3AEFFCC308D3F1 /* PinyinChineseMatcher.swift */,
-				5A560F46C2528952ADAE2C595105FAC9 /* String+Pinyin.swift */,
-			);
-			name = Classes;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -876,7 +876,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD5F0895B1807315B6D1F3C0CE5E2484 /* Build configuration list for PBXNativeTarget "PinyinChineseMatcher" */;
 			buildPhases = (
-				65AC49E71AE65DDA953C1F895581649A /* Sources */,
+				0A584230A8DF400E3996E13CEC44CD14 /* Sources */,
 				4C3E9BF2202E86C11C3A8AC92DBAF3DA /* Frameworks */,
 				14B7470B096CF5BD0C786085DF6E4F45 /* Headers */,
 			);
@@ -952,6 +952,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A584230A8DF400E3996E13CEC44CD14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE3E7508698DD8F09CA79C859D612801 /* Character+Pinyins.swift in Sources */,
+				5E4170C77F4BD804399F2C345233D72C /* PinyinChineseMatcher-dummy.m in Sources */,
+				C1242A32A174B84873800D02C7EB2DBC /* PinyinChineseMatcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3C4AABA28564F6F29FE8E3F38226690A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1013,16 +1023,6 @@
 				110A640A9BE45841BA938B4C29EF5446 /* ThrowAssertion.swift in Sources */,
 				22C1DE74D494C10BBE727F239A68447D /* ThrowError.swift in Sources */,
 				D88575ED37BC462E8130CDBEFE9EA308 /* XCTestObservationCenter+Register.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65AC49E71AE65DDA953C1F895581649A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79947A4808C1CC8BDBDE11156440A4AE /* PinyinChineseMatcher-dummy.m in Sources */,
-				E13793F4769369CC0854C80A37D2C42D /* PinyinChineseMatcher.swift in Sources */,
-				FE149CC207A8004AC0FCCBD7515436EE /* String+Pinyin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
