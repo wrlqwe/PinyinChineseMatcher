@@ -52,8 +52,9 @@ public enum PinyinChineseMatchType: Int {
 
 public class PinyinChineseMatcher {
     public class func match(chineseToMatch: String, pinyinToMatch: String) -> [NSRange] {
-        let fullMatch = match(chineseToMatch: chineseToMatch, pinyinToMatch: pinyinToMatch, matchType: .fullCheck)
-        let shorthandMatch = match(chineseToMatch: chineseToMatch, pinyinToMatch: pinyinToMatch, matchType: .shorthandCheck)
+        let pinyin = pinyinToMatch.lowercased()
+        let fullMatch = match(chineseToMatch: chineseToMatch, pinyinToMatch: pinyin, matchType: .fullCheck)
+        let shorthandMatch = match(chineseToMatch: chineseToMatch, pinyinToMatch: pinyin, matchType: .shorthandCheck)
         return rangeMerging(ranges: fullMatch, otherRanges: shorthandMatch)
     }
 

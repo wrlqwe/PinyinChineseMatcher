@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvz-um-u5o">
-                                <rect key="frame" x="0.0" y="192" width="375" height="475"/>
+                                <rect key="frame" x="0.0" y="192" width="375" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,7 +64,6 @@
                             <constraint firstItem="CdW-PG-L4P" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="PMD-qa-lQH"/>
                             <constraint firstAttribute="trailing" secondItem="swe-nZ-9qq" secondAttribute="trailing" id="RRr-ZW-CFT"/>
                             <constraint firstItem="swe-nZ-9qq" firstAttribute="top" secondItem="CdW-PG-L4P" secondAttribute="bottom" constant="8" id="Skb-1v-htb"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="jvz-um-u5o" secondAttribute="bottom" id="dv0-Fm-Ek7"/>
                             <constraint firstItem="swe-nZ-9qq" firstAttribute="leading" secondItem="LVv-hI-AQf" secondAttribute="trailing" id="eC8-cg-v1I"/>
                             <constraint firstItem="LVv-hI-AQf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="mfj-M6-ZZb"/>
                             <constraint firstAttribute="trailing" secondItem="CdW-PG-L4P" secondAttribute="trailing" id="o1y-fc-ur3"/>
