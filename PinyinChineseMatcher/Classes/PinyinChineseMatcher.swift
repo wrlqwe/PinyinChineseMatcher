@@ -126,8 +126,33 @@ public class PinyinChineseMatcher {
     }
 
     private class func rangeMerging(ranges: [NSRange], otherRanges: [NSRange]) -> [NSRange] {
-        var newRange = ranges
-        newRange.append(contentsOf: otherRanges)
-        return newRange
+        func canMerge(range: NSRange, otherRange: NSRange) -> Bool {
+            return (range.location >= otherRange.location && range.location <= otherRange.location + otherRange.length) || (otherRange.location >= range.location && otherRange.location <= range.location + range.length)
+        }
+
+        var allRanges = ranges
+        var newRanges: [NSRange] = []
+        allRanges.append(contentsOf: otherRanges)
+        while !allRanges.isEmpty {
+            var pickedIndexs: [Int] = []
+            var pickedRange: NSRange!
+            for (index, range) in allRanges.enumerated() {
+                if index == 0 {
+                    pickedIndexs.append(0)
+                    pickedRange = range
+                } else {
+                    if canMerge(range: pickedRange, otherRange: range) {
+                        pickedIndexs.append(index)
+                        pickedRange = NSUnionRange(pickedRange, range)
+                    }
+                }
+            }
+            pickedIndexs.reversed().forEach { index in
+                allRanges.remove(at: index)
+            }
+            newRanges.append(pickedRange)
+        }
+
+        return newRanges
     }
 }
