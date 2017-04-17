@@ -37,11 +37,9 @@ public enum PinyinChineseMatchType: Int {
             }
             if let firstTwo = firstTwo, pinyin.hasPrefix(firstTwo) {
                 let matchRemains = pinyinToCheck.substring(from: pinyinToCheck.index(pinyinToCheck.startIndex, offsetBy: 2))
-                print("match2: \(firstTwo) for pinyinToCheck: \(pinyinToCheck) pinyin: \(pinyin)")
                 return (true, matchRemains)
             } else if pinyin.hasPrefix(first) {
                 let matchRemains = pinyinToCheck.substring(from: pinyinToCheck.index(pinyinToCheck.startIndex, offsetBy: 1))
-                print("match1: \(first) for pinyinToCheck: \(pinyinToCheck) pinyin: \(pinyin)")
                 return (true, matchRemains)
             } else {
                 return (false, "")
@@ -79,7 +77,6 @@ public class PinyinChineseMatcher {
             let index = currentIndex
             var currentMatched = false
 
-            print("matching index: \(index), pinyins: \(pinyins)")
             innerLoop: for pinyin in pinyins {
                 let checkResult = matchType.check(pinyinToCheck: matchRemains, pinyin: pinyin)
                 if checkResult.passed {
